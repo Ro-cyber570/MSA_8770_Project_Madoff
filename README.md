@@ -10,7 +10,7 @@ To Run this project, just run each cell sequentially and install the libraries i
 This repository contains three Jupyter notebooks that together form a simple multi-agent financial-analysis system:
 
 - **Agent_Buffett.ipynb** – Scrapes SEC data, builds financial tables, and provides a financial-metrics tool.
-- **Agent_Dalio.ipynb** – (Future) Scrapes news and produces sentiment lookups.
+- **Agent_Dalio.ipynb** – Scrapes news and produces sentiment lookups.
 - **Agent_Graham.ipynb** – Runs the Q&A system and orchestrates the agents.
 
 All logic is contained in these notebooks. No additional scripts are required.
@@ -131,7 +131,7 @@ When adding new features, keep one-way agent hierarchy (Graham → Buffett/Dalio
 7. Files in This Repo
 File	Purpose
 Agent_Buffett.ipynb	Scrapes fundamentals + financial metrics tool
-Agent_Dalio.ipynb	Scrapes news + sentiment tool (future)
+Agent_Dalio.ipynb	Scrapes news + sentiment tool 
 Agent_Graham.ipynb	Full Q&A tri-agent orchestration
 
 8. Quick Start
