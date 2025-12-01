@@ -23,8 +23,7 @@ The workflow is:
 
 1. **Scrape financial fundamentals** using Agent_Buffett.  
 2. **(Optional)** Scrape news/sentiment using Agent_Dalio.  
-3. **Run the Tri-Agent Q&A** using Agent_Graham.  
-4. **Validate answers** using the scoring rubric in your paper.
+3. **Run the Tri-Agent Q&A** using Agent_Graham. 
 
 Each notebook is designed to run independently in Jupyter / VS Code / or Google Colab.
 
@@ -35,19 +34,14 @@ Each notebook is designed to run independently in Jupyter / VS Code / or Google 
 Open **Agent_Buffett.ipynb**.
 
 1. Set your SEC email identity:  
-   ```python
    set_identity("youremail@example.com")
 Choose your tickers by editing the list:
 
-python
-Copy code
 companies = ["MSFT", "AAPL", "NVDA", "GME", "V"]
 This is where you select your own stocks.
 
 Run the scraping cell:
 
-python
-Copy code
 results, summary = scrape_companies(companies, years=5)
 Upload the scraped financial tables to Qdrant by running the “Save to Qdrant Cloud” cell.
 
@@ -78,13 +72,10 @@ Run all setup cells (imports, tool loading, agent graph creation).
 
 Locate the helper function:
 
-python
-Copy code
 Agent_Graham("Your question here")
 Ask free-form questions, for example:
 
-python
-Copy code
+
 Agent_Graham("Should I sell GameStop?")
 Agent_Graham("Compare Microsoft and Apple earnings.")
 To evaluate the system using your nine predefined questions, run the final evaluation cell in the notebook.
