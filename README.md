@@ -35,6 +35,7 @@ Open **Agent_Buffett.ipynb**.
 
 1. Set your SEC email identity:  
    set_identity("youremail@example.com")
+
 Choose your tickers by editing the list:
 
 companies = ["MSFT", "AAPL", "NVDA", "GME", "V"]
@@ -43,6 +44,7 @@ This is where you select your own stocks.
 Run the scraping cell:
 
 results, summary = scrape_companies(companies, years=5)
+
 Upload the scraped financial tables to Qdrant by running the “Save to Qdrant Cloud” cell.
 
 Run the cell that defines the financial metrics tool
@@ -66,6 +68,7 @@ the “push to Qdrant” block
 The system will then be able to answer Q&A for your chosen tickers.
 
 4. Where to Run the Q&A
+   
 Open Agent_Graham.ipynb.
 
 Run all setup cells (imports, tool loading, agent graph creation).
@@ -78,6 +81,7 @@ Ask free-form questions, for example:
 
 Agent_Graham("Should I sell GameStop?")
 Agent_Graham("Compare Microsoft and Apple earnings.")
+
 To evaluate the system using your nine predefined questions, run the final evaluation cell in the notebook.
 
 Graham will automatically call Buffett (and Dalio, when implemented) to gather evidence.
