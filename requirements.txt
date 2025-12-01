@@ -1,0 +1,6 @@
+pandas
+langchain-core
+langchain-ollama
+langgraph
+sentence-transformers
+qdrant-client
