@@ -63,7 +63,6 @@ the scraping block
 
 the “push to Qdrant” block
 
-(If Dalio is used) edit the same ticker list inside Agent_Dalio.ipynb.
 
 The system will then be able to answer Q&A for your chosen tickers.
 
@@ -126,7 +125,7 @@ When adding new features, keep one-way agent hierarchy (Graham → Buffett/Dalio
 7. Files in This Repo
 File	Purpose
 Agent_Buffett.ipynb	Scrapes fundamentals + financial metrics tool
-Agent_Dalio.ipynb	Scrapes news + sentiment tool 
+Agent_Dalio.ipynb	 news + sentiment tool 
 Agent_Graham.ipynb	Full Q&A tri-agent orchestration
 
 8. Quick Start
